@@ -8,12 +8,17 @@ body {
     text-align: center;
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    .player {
-        position: absolute;
-        text-align: left;
-    }
-    .house {
-        text-align: right;
+    .scoreboard {
+        width: 100%;
+        .player {
+            text-align: left;
+        }
+        .house {
+            text-align: right;
+        }
+        #acehand {
+            visibility: hidden;
+        }
     }
     #result {
         position: absolute;

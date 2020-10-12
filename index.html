@@ -9,16 +9,25 @@
         <div class="main">
             <h1>Black Jack 21</h1>
             <div class="scores">
-                <span>
-                    <div class="player">
-                        <h1 id="player_score_label">Player</h1>
-                        <h3 id="player_score">0</h3>
-                    </div>
-                    <div class="house">
-                        <h1 id="house_score_label">House</h1>
-                        <h3 id="house_score">0</h3>
-                    </div>
-                </span>
+                <table class="scoreboard">
+                    <tr>
+                        <td>
+                            <div class="player">
+                                <h1 id="player_score_label">Player</h1>
+                                <h3 id="player_score">0</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <h1 id="hand">0</h1><h1 id="acehand">0</h1>
+                        </td>
+                        <td>
+                            <div class="house">
+                                <h1 id="house_score_label">House</h1>
+                                <h3 id="house_score">0</h3>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
             <div class="game">
                 <span>
@@ -28,13 +37,13 @@
                 <h1 id="result">You win!/Bust!</h1>
                 <br>
                 <span>
-                    <button class="buttons" onclick=start()>Start!</button>
+                    <button class="buttons" id="startbutton" onclick="start()">Start!</button>
                     <button class="buttons">Hit Me!</button>
                     <button class="buttons">Stay!</button>
                 </span>
             </div>
             
         </div>
-        
+        <script src="js/scripts.js"></script>
     </body>
 </html>

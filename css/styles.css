@@ -11,13 +11,20 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-body .player {
-  position: absolute;
+body .scoreboard {
+  width: 100%;
+}
+
+body .scoreboard .player {
   text-align: left;
 }
 
-body .house {
+body .scoreboard .house {
   text-align: right;
+}
+
+body .scoreboard #acehand {
+  visibility: hidden;
 }
 
 body #result {
