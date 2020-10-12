@@ -1,0 +1,38 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body .player {
+  position: absolute;
+  text-align: left;
+}
+
+body .house {
+  text-align: right;
+}
+
+body #result {
+  position: absolute;
+  left: 35%;
+  top: 800px;
+  visibility: hidden;
+}
+
+body .buttons {
+  padding: 10px;
+  margin: 15px;
+  background-color: red;
+  color: white;
+  font-size: 60px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */

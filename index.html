@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blackjack</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="main">
+            <h1>Black Jack 21</h1>
+            <div class="scores">
+                <span>
+                    <div class="player">
+                        <h1 id="player_score_label">Player</h1>
+                        <h3 id="player_score">0</h3>
+                    </div>
+                    <div class="house">
+                        <h1 id="house_score_label">House</h1>
+                        <h3 id="house_score">0</h3>
+                    </div>
+                </span>
+            </div>
+            <div class="game">
+                <span>
+                    <img src="images/red_back.png" alt="red card" title="red back of card" id="card1">
+                    <img src="images/red_back.png" alt="red card" title="red back of card" id="card2">
+                </span>
+                <h1 id="result">You win!/Bust!</h1>
+                <br>
+                <span>
+                    <button class="buttons" onclick=start()>Start!</button>
+                    <button class="buttons">Hit Me!</button>
+                    <button class="buttons">Stay!</button>
+                </span>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
