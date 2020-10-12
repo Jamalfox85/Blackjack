@@ -27,14 +27,18 @@ body .scoreboard #acehand {
   visibility: hidden;
 }
 
-body #result {
+body .game .cards {
+  width: 100%;
+}
+
+body .game #result {
   position: absolute;
   left: 35%;
   top: 800px;
   visibility: hidden;
 }
 
-body .buttons {
+body .game .buttons {
   padding: 10px;
   margin: 15px;
   background-color: red;

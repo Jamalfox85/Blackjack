@@ -20,18 +20,23 @@ body {
             visibility: hidden;
         }
     }
-    #result {
-        position: absolute;
-        left: 35%;
-        top: 800px;
-        visibility: hidden;
-    }
-    .buttons {
-        padding: 10px;
-        margin: 15px;
-        background-color: red;
-        color: white;
-        font-size: 60px;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    .game {
+        .cards {
+            width: 100%;
+        }
+        #result {
+            position: absolute;
+            left: 35%;
+            top: 800px;
+            visibility: hidden;
+        }
+        .buttons {
+            padding: 10px;
+            margin: 15px;
+            background-color: red;
+            color: white;
+            font-size: 60px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
     }
 }

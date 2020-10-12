@@ -30,15 +30,22 @@
                 </table>
             </div>
             <div class="game">
-                <span>
-                    <img src="images/red_back.png" alt="red card" title="red back of card" id="card1">
-                    <img src="images/red_back.png" alt="red card" title="red back of card" id="card2">
-                </span>
+                <table class="cards">
+                    <tr>
+                        <td>
+                            <img src="images/red_back.png" alt="red card" title="red back of card" id="card1">
+                        </td>
+                        <td>
+                            <img src="images/red_back.png" alt="red card" title="red back of card" id="card2">
+                        </td>
+                        <td id="card3"></td>
+                    </tr>
+                </table>
                 <h1 id="result">You win!/Bust!</h1>
                 <br>
                 <span>
                     <button class="buttons" id="startbutton" onclick="start()">Start!</button>
-                    <button class="buttons">Hit Me!</button>
+                    <button class="buttons" onclick="hitMe()">Hit Me!</button>
                     <button class="buttons">Stay!</button>
                 </span>
             </div>
