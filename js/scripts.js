@@ -1,4 +1,8 @@
+player_score = 0;
+house_score = 0;
 function start () {
+    document.getElementById("result").style.visibility = "hidden";
+    document.getElementById("acehand").style.visibility = "hidden";
     hand = 0;
     acehand = 0;
     var card1 = "card1"
@@ -15,15 +19,67 @@ function start () {
 }
 
 function hitMe() {
-    var card3 = "card3"
-    var card3num = Math.floor((Math.random() * 13) + 1);
-    var card3suit = Math.floor(Math.random() * 4);
-    document.getElementById("card3").innerHTML= selectcard(card3, card3num, card3suit);
+    var row = document.getElementById("cards").rows[0];
+    row.insertCell(-1);
+    card = Math.floor(Math.random() * 2);
+    switch (card) {
+        case 0:
+            document.getElementById("handcards").lastChild.src="0";
+            break;
+        case 1:
+            document.getElementById("handcards").lastChild.src="1";
+            break;
+        case 2:
+            x.innerHTML = "2";
+            break;
+    }
+    
+    swapCard();
+    checkWin();
+}
+
+function stay() {
+    if (acehand >= 18 || hand >= 18) {
+        document.getElementById("result").innerHTML = "You Win!";
+        document.getElementById("result").style.visibility = "visible";
+        playerWins();
+    } else {
+        document.getElementById("result").innerHTML = "You Lose...";
+        document.getElementById("result").style.visibility = "visible";
+        houseWins();
+    }
 }
 function aceinhand() {
     hand += 1;
     document.getElementById("acehand").style.visibility = "visible";
+    blackJack();
 }
+function blackJack() {
+    if (hand == 21) {
+        document.getElementById("result").innerHTML = "You Win!";
+        document.getElementById("result").style.visibility = "visible";
+    }
+}
+function checkWin() {
+    if (hand > 21) {
+        document.getElementById("result").innerHTML = "BUST! You Lose...";
+        document.getElementById("result").style.visibility = "visible";
+        houseWins();
+    }else if (hand >= 18 || acehand >= 18) {
+        document.getElementById("result").innerHTML = "You Win!";
+        document.getElementById("result").style.visibility = "visible";
+        playerWins();
+    }
+}
+function playerWins() {
+    player_score += 1;
+    document.getElementById("player_score").innerHTML = player_score;
+}
+function houseWins() {
+    house_score += 1;
+    document.getElementById("house_score").innerHTML = house_score;
+}
+
 function selectcard(cardnum, card, suit) {
     switch (card) {
         case 1:
