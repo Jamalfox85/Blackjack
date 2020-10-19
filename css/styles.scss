@@ -26,9 +26,11 @@ body {
         }
         #result {
             position: absolute;
-            left: 35%;
             top: 800px;
+            left: 45%;
+            right: 55%;
             visibility: hidden;
+            background-color: gold;
         }
         .buttons {
             padding: 10px;
